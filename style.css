@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.screen-control {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  width: 340px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border: 1px solid #666;
+  border-radius: 6px;
+  background-color: black;
+  object-fit: contain;
+}
+
+.controls button {
+  margin: 8px;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #0056b3;
+}
+
+.downloads {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.rename-input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 6px;
+  font-size: 14px;
+  text-align: center;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DualCast - Multi Screen Recorder</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.9/dist/ffmpeg.min.js"></script>
+</head>
+<body>
+  <h1>🎥 DualCast</h1>
+
+  <label>
+    <input type="checkbox" id="noiseToggle" />
+    Enable Noise Cancellation
+  </label>
+
+  <div id="screens" class="container"></div>
+
+  <div class="controls">
+    <button onclick="addScreen()">➕ Add Screen</button>
+    <button onclick="startAll()">▶️ Start Recording</button>
+    <button onclick="pauseAll()">⏸️ Pause</button>
+    <button onclick="resumeAll()">▶️ Resume</button>
+    <button onclick="stopAll()">⏹️ Stop & Download</button>
+  </div>
+
+  <div class="downloads">
+    <p id="status"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html
